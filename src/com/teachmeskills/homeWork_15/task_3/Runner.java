@@ -21,29 +21,29 @@ public class Runner {
 
         try {
 
-        double sum = 0;
+             double sum = 0;
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter size of the collection of numbers: ");
+             Scanner scanner = new Scanner(System.in);
+             System.out.println("Enter size of the collection of numbers: ");
 
-        int sizeCollection = Integer.parseInt(scanner.nextLine());
-        List<Integer> numberCollection = new ArrayList<>(sizeCollection);
+             int sizeCollection = Integer.parseInt(scanner.nextLine());
+             List<Integer> numberCollection = new ArrayList<>(sizeCollection);
 
-        for (int i = 0; i < sizeCollection; i++) {
-            numberCollection.add((int) (Math.random() * 100));
-            sum += numberCollection.get(i);
-        }
+             for (int i = 0; i < sizeCollection; i++) {
+                  numberCollection.add((int) (Math.random() * 100));
+                  sum += numberCollection.get(i);
+             }
 
-        double average = sum / sizeCollection;
+             double average = sum / sizeCollection;
 
-        System.out.println("Your random number collection: \n" + numberCollection);
-        System.out.println("Average of this number collection: \n" + average);
+             System.out.println("Your random number collection: \n" + numberCollection);
+             System.out.println("Average of this number collection: \n" + average);
         }
         catch (NumberFormatException e){
-            System.out.println("input cannot be converted to number");
+             System.out.println("input cannot be converted to number");
         }
         catch (InputMismatchException e){
-            System.out.println("Input mismatch for collection size");
+             System.out.println("Input mismatch for collection size");
         }
 
     }
