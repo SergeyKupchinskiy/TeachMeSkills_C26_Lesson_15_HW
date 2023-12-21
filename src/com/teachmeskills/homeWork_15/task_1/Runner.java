@@ -25,6 +25,7 @@ public class Runner {
 
         List<Integer> numbers = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter an integer for the collection. Or enter 'exit' to stop entering and check");
 
         while (true){
